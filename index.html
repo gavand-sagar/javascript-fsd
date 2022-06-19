@@ -12,22 +12,20 @@
 
 <body>
 
-    <button onclick="showAlert()">click me</button>
+    <input id="time-input">
+    <button onclick="btnClick()">click me</button>
 
     <script>
 
-        console.log('hiiii')
-
-        setTimeout(showAlert, 3000)
-
-        //showAlert()
-
-        console.log('byyeeee')
-
+        function btnClick() {
+            let time = document.getElementById('time-input').value;
+            setTimeout(showAlert, (time * 1000))
+        }
 
         function showAlert() {
-            console.log('showing alert')
+            alert("hiii")
         }
+
 
     </script>
 </body>
