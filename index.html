@@ -11,19 +11,30 @@
 </head>
 
 <body>
-
-    <input id="time-input">
-    <button onclick="btnClick()">click me</button>
+    <button onclick="startClock()">Start Clock</button>
+    <button onclick="stopClock()">Stop Clock</button>
+    <br>
+    <span id="hours"></span>:<span id="minute"></span>:<span id="seconds"></span>
 
     <script>
 
-        function btnClick() {
-            let time = document.getElementById('time-input').value;
-            setTimeout(showAlert, (time * 1000))
+        let whateverName;
+
+        function startClock() {
+            whateverName = setInterval(logCurrentTime, 1000)
         }
 
-        function showAlert() {
-            alert("hiii")
+        function stopClock() {
+            clearInterval(whateverName)
+        }
+
+        function logCurrentTime() {
+
+            let currentTime = new Date();
+            document.getElementById('hours').innerHTML = currentTime.getHours();
+            document.getElementById('seconds').innerHTML = currentTime.getSeconds();
+            document.getElementById('minute').innerHTML = currentTime.getMinutes();
+
         }
 
 
