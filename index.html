@@ -11,20 +11,188 @@
 </head>
 
 <body>
-
-    <input id="time-input">
-    <button onclick="btnClick()">click me</button>
+    <p id="message"></p>
 
     <script>
 
-        function btnClick() {
-            let time = document.getElementById('time-input').value;
-            setTimeout(showAlert, (time * 1000))
-        }
+        // diff between var and let;
 
-        function showAlert() {
-            alert("hiii")
-        }
+        //1. var gets hoisted and let do not get hoisted
+
+        // function hoisting() {
+        //     var name; // hoisting -- imaginary code           
+
+        //     console.log(name)
+
+        //     var name = 'sagar';
+
+        // }
+
+
+        // hoisting()
+
+
+
+
+        //2. 'var' are function scoped whereas 'let' are block scop
+        // function scoping() {
+        //     //block?
+
+        //     if (2 > 1) {
+        //         //diff block a
+        //         let password;
+        //         password = 'sagar'
+        //         console.log(password);
+
+        //         if (100 > 5) {
+        //             console.log(password);
+
+        //             if (40 > 20) {
+        //                 console.log(password);
+        //             }
+        //         }
+
+        //     }
+
+        //     if(3 > 1)
+        //     {
+        //         //diff block b
+        //         console.log(password);
+        //     }
+
+
+        // }
+
+
+        // scoping()
+
+
+
+        /////////// Const keyword
+
+        // function understandConst(){
+
+        //     const name = "sagar";
+
+        //     console.log(name)
+
+        // }
+        // understandConst();
+
+
+
+
+        //Multi-line string  / Template Literals
+
+        // let name = 
+        // `<h1>Welcome</h1>
+        // <h1>Welcome</h1>
+        // <h1>Welcome</h1>
+        // <h1>Welcome</h1>
+        // <h1>Welcome</h1>
+        // <h1>Welcome</h1>
+        // <h1>Welcome</h1>
+        // <h1>Welcome</h1>
+        // <h1>Welcome</h1>
+        // <h1>Welcome</h1>`
+
+        // console.log(name)
+
+        // let name ="sagar"
+
+        // let message = "hi " + name + " there";
+
+        // console.log(message);
+
+        // let name = "Nitin"
+        // let service = "loan"
+        // let agent = "James"
+        // let time = "17:00"
+        // // database logic
+
+        // //let message = "hi " + name + " there "
+
+
+        // let message = `hi ${name}, how are you doing, 
+        // we are happy to tell you that your are successfully register for our ${service}.
+        // Agent ${agent} will contact you at around ${time}`;
+
+        // // let message = "hi " + name + ", how are you doing,"
+        // //             + "we are happy to tell you that your are successfully register for our " 
+        // //             + service + ".Agent " + agent + " will contact you at around " + time + "";
+
+        // document.getElementById('message').innerHTML = message;
+
+
+
+
+
+
+        // /////Default Parameters
+        // function showAlert(message = 'Something went wrong!') {
+        //     alert(message)
+        // }
+        // showAlert()
+        // showAlert("Product name is not proper")
+
+
+
+        //////Enhanced Object Literals // short cut way of creating object with initial values
+
+        // let name = 'sagar'
+        // let age = 80
+
+
+        // let user = {
+        //     name,
+        //     age,
+        // }
+
+
+        // console.log(user)
+
+
+
+        ///////Destructuring Assignment
+
+        // let user = {
+        //     name: 'Sagar',
+        //     age: 80,
+        //     contact: '21312312',
+        //     email: 'asdf@adsf.ccc',
+        //     address: "Mumbai"
+        // }
+
+
+        // // let name = user.name
+        // // let age = user.age
+        // // let email = user.email;
+
+        // let { name, age, email } = user
+
+
+
+        // console.log(name)
+        // console.log(age)
+        // console.log(email)
+
+
+        let numbers = [12, 3, 50, 34];
+
+
+        // let first = numbers[0];
+        // let second = numbers[1];
+
+
+        let [first, ...second] = [12, 3, 50, 34]
+
+        // let last = numbers[numbers.length - 1];
+
+        // let last = numbers.reverse()[0]
+
+
+        console.log(first)
+        console.log(second)
 
 
     </script>
