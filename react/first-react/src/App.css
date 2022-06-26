@@ -1,0 +1,19 @@
+.text-blue{
+    color: blue;
+}
+
+
+body{
+    background-color: lightgray;
+}
+
+.off-white{
+    color: gray;
+}
+
+.comment-container{
+    background-color: white;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 5px;
+}
