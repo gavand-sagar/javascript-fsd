@@ -1,13 +1,19 @@
-import HeadingButton from './HeadingButton'
-export default function Comment({ heading, username, comment }) {
+export default function Comment({ heading, username, comment, headingColor }) { // props
+
+    let headingStyles = {
+        'color': headingColor
+    }
+
+
     return (<>
 
         <div className="comment-container">
-            <h1>{heading}</h1>
+            <h1 style={headingStyles}>{heading}</h1>
             <p>
-                <span className="off-white">by</span> <span className="text-blue">{username}</span>
+                <span className="off-white">by</span> 
+                <span className="text-blue">{username}</span>
             </p>
-            <p>{comment}  <HeadingButton label="Delete"/> </p>
+            <p>{comment}</p>
         </div>
 
     </>)

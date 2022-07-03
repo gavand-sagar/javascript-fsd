@@ -1,6 +1,6 @@
 export default function HeadingButton({label}) {
     return (<>
-        <input></input>
+        <h1>{label}</h1>
         <button className="heading-button">{label}</button>
     </>)
 }

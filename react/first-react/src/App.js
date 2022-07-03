@@ -3,7 +3,9 @@ import './App.css';
 import RedButton from './RedButton'
 import Comment from './Comment'
 import HeadingButton from './HeadingButton'
-
+import ColoredButton from './ColoredButton';
+import Counter from './Counter';
+import ExpandCard from './ExpandCard'
 function App() {
   return (
     <div className="App">
@@ -12,7 +14,10 @@ function App() {
       <HeadingButton label="New Post"/>
       <HeadingButton label="Save"/> */}
 
+      {/* <HeadingButton label="Home"/>
       <HeadingButton label="Home"/>
+      <HeadingButton label="Home"/>
+      <HeadingButton label="Home"/> */}
 
       {/* <button className="heading-button">Save</button>
 
@@ -34,12 +39,34 @@ function App() {
       //whatever heading value you pass that must show as heading in the section
       // fout text */}
 
+      {/* 
 
-      <Comment heading="This was funny" username="sagar" comment="asdfsd"></Comment>
+      <Comment headingColor='red' heading="This was funny" username="sagar" comment="asdfsd"></Comment>
 
-      <Comment heading="Why react??" username="nitin" comment="because its so nice"></Comment>
+      <Comment headingColor='yellow' heading="Why react??" username="nitin" comment="because its so nice"></Comment>
 
-      <Comment heading="Java?" username="sheroz" comment="thats too"></Comment>
+      <Comment headingColor='green' heading="Java?" username="sheroz" comment="thats too"></Comment>
+
+      <Comment headingColor='blue' heading="Javscript?" username="chris" comment="hsdahfhsadhf afsd fsadf"></Comment>
+      */}
+
+      {/* <ColoredButton label="React"></ColoredButton>
+      <ColoredButton label="Java"></ColoredButton>
+      <ColoredButton label="Node.js"></ColoredButton> */}
+
+
+
+      {/* <Counter min="5" max="10" initialValue="6" heading="Something" /> <br />
+
+
+      <Counter min="6" max="8" initialValue="7" heading="Different value" />
+
+
+      <Counter  heading="Different value"  content="asdfsadfsdfsadf"/> */}
+
+
+
+      <ExpandCard heading="React" content="React is awesome! asdjkfj asdkjfk jsadkfj ksajdkfjsakdj fksdjk"/>
 
 
     </div>

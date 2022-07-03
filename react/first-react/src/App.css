@@ -25,3 +25,23 @@ body{
     margin-right: 10px;
     padding: 5px;
 }
+
+.colored-button{
+    background-image: linear-gradient(to right, rgb(123, 16, 103), rgb(217, 27, 58));
+    border: none;
+    height: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.card-container{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card-container .heading{
+    font-size: 30px;
+    font-weight: bold;
+}
